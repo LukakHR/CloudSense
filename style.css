@@ -1,0 +1,48 @@
+#naziv, #cijena {
+    border-radius: 6px;
+}
+
+label {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#Submit, #Izbrisi, #Nasumican {
+    border-radius: 6px;
+}
+
+table, th, td {
+    border-collapse: collapse;
+}
+
+table#Tablica tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#Tablica tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+th, td {
+    border-bottom: 1px solid;
+    padding: 10px;
+}
+
+#Izracun {
+    max-width: 200px;
+    text-align: right;
+}
+
+#Popust {
+    color: red;
+}
+
+#Izbrisi {
+    background-color: #000;
+    color: #FFF;
+}
+
+.removers {
+    background-color: Transparent;
+    border: none;
+}

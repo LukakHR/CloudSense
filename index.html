@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>CloudSense Videoteka</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body o>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <div class="container">
+            <h1 style="text-align: center">CloudSense Videoteka</h1>
+            <br />
+            <div style="text-align: center">
+
+                <label> Naziv filma: </label>
+                <input type="text" id="Naziv" required />
+                <label>Cijena filma: </label>
+                <input type="number" min="1" id="Cijena" required />
+                <select id="Valuta">
+                    <option value="HRK">HRK</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                </select>
+                <input type="button" id="Submit" value="Dodaj film" onclick="dodajFilm()" />
+                <input type="button" id="Nasumican" value="Dodaj nasumican" onclick="dodajNasumican()" />
+                <input type="button" id="Izbrisi" value="Makni sve" onclick="makniSve()" />
+                <hr />
+                <table id="Tablica" style="width: 100%">
+                    <tr>
+                        <th> No. </th>
+                        <th> Naziv filma </th>
+                        <th> Cijena filma </th>
+                        <th></th>
+                    </tr>
+                </table>
+                <br />
+                <div id="Izracun" style="float:right">
+                    <label id="Ukupno">Ukupno: </label>
+                    <label id="UkupnoBroj">0.00</label><br />
+                    <label id="Pupust" style="color: #FF5B5B">Popust: </label>
+                    <label id="PopustBroj" style="color: #FF5B5B">0.00</label>
+                    <hr />
+                    <label id="Za platiti: ">Za platiti: </label>
+                    <label id="ZaBroj">0.00</label>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+
+</html>
